@@ -9,6 +9,7 @@ public class tap_manager : MonoBehaviour {
     public Transform Left_Boundary;     //this is the leftest side that can be done
     public Transform Right_Boundary;    //this sets the rightmost boundary	
     public float y_spawn;
+    public int cost_to_upgrade = 1;     //TODO: Implement exponential cost to upgrade
     void Start () {
         y_spawn = carrot_sprite.transform.position.y;
         
@@ -20,8 +21,11 @@ public class tap_manager : MonoBehaviour {
 	}
     public void upgrade() //increse carrots per tap by cost of 2 for price of 1 
     {
-        score_manager_object.carrotsPerTap += 2; //upgrades carrotsPerTap by 2 by accesing score manager object
-        score_manager_object.totalCarrots -= 1; //removing 1
+        if (score_manager_object.totalCarrots >= cost_to_upgrade)
+        { 
+            score_manager_object.carrotsPerTap += 2; //upgrades carrotsPerTap by 2 by accesing score manager object
+            score_manager_object.totalCarrots -= cost_to_upgrade; //removing 1
+        }
     }
     private void OnMouseDown() //when you click it do
     {
