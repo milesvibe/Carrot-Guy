@@ -61,7 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\check_if_collide_with_face.cs" />
+    <Compile Include="Assets\carrot_manager.cs" />
     <Compile Include="Assets\Face_Mover.cs" />
     <Compile Include="Assets\score_manager.cs" />
     <Compile Include="Assets\tap_manager.cs" />

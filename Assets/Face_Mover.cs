@@ -8,6 +8,7 @@ public class Face_Mover : MonoBehaviour {
     public Transform Right_Boundary;    //this sets the rightmost boundary
     public int SpriteWalkSpeed;         //THis 
     public bool bounce = false;
+    public score_manager CollideiScore;
     // Use this for initialization
     void Start () {
 		
@@ -42,5 +43,13 @@ public class Face_Mover : MonoBehaviour {
 	void Update () {
         Movement();
 	}
-   
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(collision.gameObject);
+        CollideiScore.my_onClick();
+    }
+
+
+
 }

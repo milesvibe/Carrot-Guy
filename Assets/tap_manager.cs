@@ -29,7 +29,7 @@ public class tap_manager : MonoBehaviour {
     }
     private void OnMouseDown() //when you click it do
     {
-        score_manager_object.totalCarrots = score_manager_object.totalCarrots + score_manager_object.carrotsPerTap; //combines total value with new tap value 
+        //score_manager_object.totalCarrots = score_manager_object.totalCarrots + score_manager_object.carrotsPerTap; //combines total value with new tap value 
         Clone_Carrot();
     }
     void Clone_Carrot()
