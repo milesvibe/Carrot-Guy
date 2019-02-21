@@ -38,12 +38,3 @@ public class score_manager : MonoBehaviour {
 
     
 }
-
-
-    //public int upgradeCarrots = totalCarrot
-
-
-
-
-
-
