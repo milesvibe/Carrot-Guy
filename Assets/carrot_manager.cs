@@ -5,7 +5,6 @@ using UnityEngine;
 public class carrot_manager : MonoBehaviour
 {
   public GameObject tap_area;
-
   // Start is called before the first frame update
   void Start()
   {
@@ -20,13 +19,18 @@ public class carrot_manager : MonoBehaviour
         //If clone reaches some y value, destroy itself.
         
         this.GetComponent<Rigidbody2D>().isKinematic = false;
-        //Destroy(this.gameObject);
+        
+        
       }
   }
 
   // Update is called once per frame
   void Update()
   {
-    
+     
+        if(this.transform.position.y <= -6.0f)
+        {
+          Destroy(this.gameObject);
+        }
   }
 }
