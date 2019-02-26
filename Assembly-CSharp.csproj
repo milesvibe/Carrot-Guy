@@ -56,6 +56,7 @@
      <Compile Include="Assets\carrot_manager.cs" />
      <Compile Include="Assets\Face_Mover.cs" />
      <Compile Include="Assets\score_manager.cs" />
+     <Compile Include="Assets\stats_script.cs" />
      <Compile Include="Assets\tap_manager.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/tchau/Desktop/Carrot-Guy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

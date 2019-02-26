@@ -12,7 +12,7 @@ public class tap_manager : MonoBehaviour {
   public int cost_to_upgrade = 1;                     //TODO: Implement exponential cost to upgrade
   void Start () {
     y_spawn = carrot_sprite.transform.position.y;
-   }
+  }
 	
 	// Update is called once per frame
 	void Update () {
